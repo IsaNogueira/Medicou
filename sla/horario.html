@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<header><div class="container">
+    <h1 class="logo"></h1>
+    <nav>
+      <ul>
+        <li><a href="#">Tela inicial</a></li>
+        <li><a href="#">Consultas Marcadas</a></li>
+        <li><a href="#">Sobre nós</a></li>
+        <li><a href="#">Perfil</a></li>
+      </ul>
+    </nav>
+  </div></header>
+
+<body>
+    <p>Agendamento de consulta</p>
+<label for="hora-cons">Horário sugerido para consulta</label>
+<input id="hora-cons" type="time" name="hora-cons" value="08:00">
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+    #myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  
+  body {
+      margin: 0;
+      background: rgb(255, 251, 251);
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 800;
+  }
+  
+  .container {
+      width: 80%;
+      margin: 0 auto;
+  }
+  
+  header {
+    background: #44c2d8;
+  }
+  
+  header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  .logo {
+    float: left;
+    padding: 10px 0;
+  }
+  
+  nav {
+    float: right;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+  
+    position: relative;
+  }
+  
+  nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  nav a:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: rgb(250, 250, 250);
+  
+    position: absolute;
+    top: 0;
+    width: 0%;
+  
+    transition: all ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    width: 100%;
+  }
+  
+  
+  </style>
